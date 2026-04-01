@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+
+# Data & Models (large binary artefacts)
+data/*.parquet
+data/*.csv
+models_store/*.joblib
+models_store/*.pkl
+models_store/reference_data.parquet
+!models_store/.gitkeep
+
+# Logs & Reports
+logs/
+*.log
+
+# Env
+.env
+!.env.example
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.coverage
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Docker
+.docker/
+.claude/
