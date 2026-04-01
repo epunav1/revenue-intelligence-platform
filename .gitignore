@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+
+# Generated data (reproducible via `python run.py`)
+data/raw/
+data/staging/
+data/intermediate/
+data/mart/*.parquet
+data/mart/churn_model.pkl
+data/revenue_intelligence.duckdb
+
+# Keep the data directory structure
+!data/raw/.gitkeep
+!data/staging/.gitkeep
+!data/intermediate/.gitkeep
+!data/mart/.gitkeep
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Assets (screenshots added manually)
+assets/screenshots/
